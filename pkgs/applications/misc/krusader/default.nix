@@ -1,6 +1,6 @@
 {
   mkDerivation, fetchurl, lib,
-  extra-cmake-modules, kdoctools, wrapGAppsHook,
+  extra-cmake-modules, kdoctools, wrapGAppsHook, kdeApplications,
   karchive, kconfig, kcrash, kguiaddons, kinit, kparts, kwindowsystem
 }:
 
@@ -24,5 +24,5 @@ in mkDerivation rec {
   };
 
   nativeBuildInputs = [ extra-cmake-modules kdoctools wrapGAppsHook ];
-  propagatedBuildInputs = [ karchive kconfig kcrash kguiaddons kinit kparts kwindowsystem ];
+  propagatedBuildInputs = [ kdeApplications.kio-extras karchive kconfig kcrash kguiaddons kinit kparts kwindowsystem ];
 }
