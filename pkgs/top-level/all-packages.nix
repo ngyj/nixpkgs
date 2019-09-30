@@ -16652,6 +16652,8 @@ in
 
   android-udev-rules = callPackage ../os-specific/linux/android-udev-rules { };
 
+  anime-ace = callPackage ../data/fonts/anime-ace {};
+
   ankacoder = callPackage ../data/fonts/ankacoder { };
   ankacoder-condensed = callPackage ../data/fonts/ankacoder/condensed.nix { };
 
